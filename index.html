@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -334,7 +334,7 @@
                                                 max={participants.length || 1}
                                                 value={selectionCount} 
                                                 onChange={(e) => setSelectionCount(parseInt(e.target.value) || 1)}
-                                                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
+                                                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none text-gray-900 font-semibold"
                                             />
                                             <button 
                                                 onClick={handleSelection}
@@ -437,7 +437,7 @@
                                                     <tr key={idx} className="bg-white hover:bg-blue-50 transition-colors animate-fade-in" style={{animationDelay: `${idx * 0.05}s`}}>
                                                         <td className="p-3 font-bold text-blue-600">{idx + 1}</td>
                                                         <td className="p-3 text-gray-800">{person.Matricula}</td>
-                                                        <td className="p-3 font-medium">
+                                                        <td className="p-3 font-medium text-gray-900">
                                                             {person.Apellido}, {person.Nombre}
                                                             <div className="text-xs text-gray-400 sm:hidden">{person.Documento}</div>
                                                         </td>
